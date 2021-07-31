@@ -6,10 +6,11 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
 let store = createStore(manageTodo);
+//dispatch action to store 
 
 ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
   document.getElementById('root')
-);
+); 
